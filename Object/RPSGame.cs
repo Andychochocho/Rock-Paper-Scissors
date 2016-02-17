@@ -30,7 +30,10 @@ namespace RPS.Objects
       {
         return "draw";
       }
-      else if (this.GetChoice1() == "rock" && this.GetChoice2() == "scissors")
+      else if( (this.GetChoice1() == "rock" && this.GetChoice2() == "scissors")
+              || (this.GetChoice1() == "scissors" && this.GetChoice2() == "paper")
+              || (this.GetChoice1() == "paper" && this.GetChoice2() == "rock")
+              )
       {
         return "player 1";
       }
