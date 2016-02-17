@@ -26,7 +26,18 @@ namespace RPS.Objects
 
     public string RPSWinner()
     {
-      return "draw";
+      if (this.GetChoice1() == this.GetChoice2())
+      {
+        return "draw";
+      }
+      else if (this.GetChoice1() == "rock" && this.GetChoice2() == "scissors")
+      {
+        return "player 1";
+      }
+      else
+      {
+        return "player 2";
+      }
     }
   }
 }
