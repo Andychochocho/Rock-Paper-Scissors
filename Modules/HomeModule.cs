@@ -14,8 +14,10 @@ namespace RPS
       };
       Post["/output"] = _ =>
       {
-
-        return View["output.cshtml"];
+        string output;
+        RPSGame newRPSGame = new RPSGame(Request.Form["player1"], Request.Form["player2"]);
+        output = newRPSGame.RPSWinner();
+        return View["output.cshtml", output];
       };
     }
   }

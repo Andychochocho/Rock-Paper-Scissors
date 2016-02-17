@@ -6,17 +6,19 @@
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <div class="container">
-      <h2></h2>
+    <div>
       <form action="/output" method="post">
-        <div class="form-group">
-          <label for=""></label>
-          <input type="" class="form-control" id="" name="">
-        </div>
-
-        <div>
-          <button type="submit">submit</button>
-        </div>
+        <select name="player1">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <select name="player2">
+          <option value="rock">Rock</option>
+          <option value="paper">Paper</option>
+          <option value="scissors">Scissors</option>
+        </select>
+        <button type="submit">Play</button>
       </form>
     </div>
   </body>
